@@ -97,6 +97,8 @@ import { TeamPlayerComponent } from './team-player/team-player.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { LoadingComponent } from './UI/loading/loading.component';
+import { MatchTileComponent } from './UI/match-tile/match-tile.component';
+import { TinyMatchTileComponent } from './UI/tiny-match-tile/tiny-match-tile.component';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   // Change this to your upload POST address:
@@ -132,7 +134,9 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     TeamMediaComponent,
     TeamPlayerComponent,
     NotificationsComponent,
-    LoadingComponent
+    LoadingComponent,
+    MatchTileComponent,
+    TinyMatchTileComponent
   ],
   imports: [
     ImageCropperModule,

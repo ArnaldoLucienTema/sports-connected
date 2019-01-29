@@ -22,7 +22,7 @@ export class TeamStatsComponent implements OnInit,AfterViewInit {
     this.id  = this.route.snapshot.paramMap.get('id');
   }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
 
     this.teamService.getTeam(this.id)
       .subscribe(team => {

@@ -1,0 +1,19 @@
+<div class="row no-gutters p-2 tiny-match-tile">
+  <div class="float-left px-0">
+    <span class="tiny-match-tile_league">{{ match.competition_season.name }}</span><br>
+    <span class="tiny-match-tile_date">{{ match.date | date:'dd-MM-yyyy'}}</span>
+  </div>
+  <div class="float-right px-0">
+      <div class="tiny-match-tile_teams">
+    <div class="tiny-match-tile_team_container mr-2">
+      <img class="tiny-match-tile_team" [src]="match.home_team.avatar" [alt]="match.home_team.name">
+    </div>
+    <div class="tiny-match-tile_score">{{match.home_team.goals }}</div>
+    <span class="mx-1">-</span>
+    <div class="tiny-match-tile_score">{{ match.away_team.goals }}</div>
+    <div class="tiny-match-tile_team_container ml-2">
+      <img class="tiny-match-tile_team" [src]="match.away_team.avatar" [alt]="match.away_team.name">
+    </div>
+    </div>
+  </div>
+</div>

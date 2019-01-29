@@ -1,0 +1,174 @@
+// .score-tile-wrapper {
+//   margin: 0 auto;
+//   display: block;
+//   width: 100%;
+//   border-radius: 10px;
+//   background-color: white;
+//   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+// }
+
+// .score-tile {
+//   cursor: pointer;
+//   position: relative;
+//   color: #11202B;
+//   font-family: "Flama-Medium",sans-serif;
+//   font-size: 14px;
+//   line-height: initial;
+//   margin: 0px auto 20px auto;
+//   .score-tile-min__wrapper {
+//     padding: 6px 10px 7px 3px;
+//     .score-tile__top {
+//       margin-left: 10px;
+//       display: -ms-flexbox;
+//       display: flex;
+//       -ms-flex-pack: justify;
+//       justify-content: space-between;
+//       -ms-flex-align: center;
+//       align-items: center;
+//       height: 28px;
+//       .score-tile-broadcaster {
+//         font-family: "Flama-Medium", sans-serif;
+//         color: #586066;
+//         font-size: 11px;
+//         .broadcaster.lp {
+//           padding-left: 4px;
+//           position: relative;
+//         }
+//       }
+//     }
+//     .team-game-score {
+//       display: -ms-flexbox;
+//       display: flex;
+//       -ms-flex-align: center;
+//       align-items: center;
+//       margin: 0px 0px 5px 0px;
+//       min-height: 34px;
+//       &.team-game-score--loser {
+//         color: #66737C;
+//       }
+//       .team-game-score__score {
+//         -ms-flex: 1 0 0px;
+//         flex: 1 0 0;
+//         text-align: center;
+//       }
+//       .team-game-score__logo {
+//         -ms-flex: 1 0 0px;
+//         flex: 1 0 0;
+//         text-align: center;
+//         .team-logo {
+//           height: 34px;
+//         }
+//       }
+//       .team-game-score__name-record .name-record__wrapper {
+//         display: -ms-flexbox;
+//         display: flex;
+//         -ms-flex-align: baseline;
+//         align-items: baseline;
+//         .score-tile__team-name {
+//           font-size: 15px;
+//           white-space: nowrap;
+//           overflow: hidden;
+//           text-overflow: ellipsis;
+//         }
+//       }
+//     }
+//   }
+//   .sc-highlights {
+//     border-top: 1px solid #E6E8EA;
+//     text-align: center;
+//     background: #F3F4F5;
+//     font-size: 13px;
+//     font-family: "Flama-Basic", sans-serif;
+//     height: 30px;
+//     line-height: 30px;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     padding: 0 5px;
+//   }
+//   .score__tile--nugget-show {
+//     a {
+//       text-decoration: none;
+//       color: #0B5BE1;
+//       &:hover {
+//         text-decoration: none;
+//         color: #0B5BE1;
+//       }
+//       &.score__tile--buzzer-beater, &:hover.score__tile--buzzer-beater {
+//         color: #051C2D;
+//       }
+//     }
+//     .score__tile--buzzer-beater {
+//       padding-top: 2px;
+//       display: -ms-flexbox;
+//       display: flex;
+//       -ms-flex-pack: justify;
+//       justify-content: space-between;
+//       -ms-flex-align: center;
+//       align-items: center;
+//       img {
+//         height: 24px;
+//       }
+//       .buzzer-beater-nugget-text {
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         white-space: nowrap;
+//         width: 100%;
+//       }
+//     }
+//   }
+//   .team-record {
+//     white-space: nowrap;
+//     font-family: "Flama-Basic", sans-serif;
+//     font-size: 11px;
+//     color: #66737C;
+//     padding-left: 4px;
+//   }
+//   .team-score {
+//     font-family: "Flama-Basic", sans-serif;
+//     font-size: 24px;
+//     text-align: right;
+//     line-height: initial;
+//   }
+//   &.score-tile-final:before {
+//     position: absolute;
+//     content: "";
+//     display: block;
+//   }
+// }
+
+.match-tile {
+  // height: 100px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+  .match-tile_league {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .match-tile_date {
+    font-size: 16px;
+  }
+
+  .match-tile_team_container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .match-tile_team {
+      height: 45px;
+      width: 45px;
+      border-radius: 45px;
+      background-color: blue;
+    }
+  }
+
+  .match-tile_score {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
