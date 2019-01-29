@@ -8,7 +8,7 @@
     "start": "node app"
   },
   "dependencies": {
-    "bcrypt": "^3.0.0",
+    "bcrypt": "^3.0.3",
     "bcryptjs": "*",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
