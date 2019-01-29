@@ -1,0 +1,66 @@
+<!-- <a class="score-tile-wrapper" href="/match">
+  <div class="score-tile score-tile-final" role="status">
+    <div class="score-tile-min__wrapper">
+      <div class="score-tile__top">
+        {{match.date}}
+        <div class="score-tile-broadcaster">
+          <span class="broadcaster lp">{{match.competition_season.name}}</span>
+        </div>
+      </div>
+
+      <div #homeTeam class="team-game-score team-game-score--home  small-collapse">
+        <div class="team-game-score__logo column small-2">
+          <img alt="{{match.away_team.name}} Logo" class="team-logo" src="{{match.away_team.avatar}}">
+        </div>
+        <div class="team-game-score__name-record column small-8">
+          <div class="name-record__wrapper">
+            <div class="score-tile__team-name">{{match.away_team.name}}</div>
+            <div *ngIf="match.played" class="team-record">(48' 34' 56' 59')</div>
+          </div>
+        </div>
+        <div class="team-game-score__score column small-2">
+          <div *ngIf="match.played" class="team-score">4</div>
+          <div *ngIf="!match.played" class="team-score">-</div>
+        </div>
+      </div>
+
+      <div #awayTeam class="team-game-score team-game-score--visitor  small-collapse team-game-score--loser">
+        <div class="team-game-score__logo column small-2">
+          <img alt="{{match.home_team.name}} Logo" class="team-logo" src="{{match.home_team.avatar}}">
+        </div>
+        <div class="team-game-score__name-record column small-8">
+          <div class="name-record__wrapper">
+            <div class="score-tile__team-name">{{match.home_team.name}}</div>
+            <div *ngIf="match.played" class="team-record">(35')</div>
+          </div>
+        </div>
+        <div class="team-game-score__score column small-2">
+          <div *ngIf="match.played" class="team-score">1</div>
+          <div *ngIf="!match.played" class="team-score">-</div>
+        </div>
+      </div>
+    </div>
+    <div class="sc-highlights">Arnaldo Tema fez hat-trick</div>
+  </div>
+</a> -->
+
+<!-- <a href="/match"> -->
+  <div class="match-tile">
+    <div class="row no-gutters">
+      <label class="col-12 match-tile_league mb-0">Liga Nos 2017/2018</label>
+      <label class="col-12 match-tile_date mb-3">11-02-2018</label>
+    </div>
+    <div class="row no-gutters">
+      <div class="offset-1 col-3 match-tile_team_container px-0">
+        <div class="match-tile_team"></div>
+      </div>
+      <label class="col-1 match-tile_score"></label>
+      <label class="col-2 match-tile_team_container">-</label>
+      <label class="col-1 match-tile_score"></label>
+      
+      <div class="col-3 match-tile_team_container px-0">
+        <div class="match-tile_team"></div>
+      </div>
+    </div>
+  </div>
+<!-- </a> -->

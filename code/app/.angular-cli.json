@@ -19,16 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
+        "styles.scss",
         "../node_modules/selectize/dist/css/selectize.css",
         "../node_modules/selectize/dist/css/selectize.default.css",
-        "assets/css/bootstrap.min.css",
         "../node_modules/ng-drag-drop/style.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/selectize/dist/js/standalone/selectize.min.js",
-        "assets/js/bootstrap.min.js"
+        "../node_modules/selectize/dist/js/standalone/selectize.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -62,7 +60,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

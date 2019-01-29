@@ -7,7 +7,7 @@ export class MatchViewModel{
     zerozero: number
   };
   date: string;
-  duration : number;
+  duration: number;
   phase: string;
   stadium: string;
   referee: string;
@@ -18,6 +18,6 @@ export class MatchViewModel{
     competition_id: string;
     phase: string;
   };
-  home_team : TeamMatch;
-  away_team : TeamMatch;
+  home_team: TeamMatch;
+  away_team: TeamMatch;
 }

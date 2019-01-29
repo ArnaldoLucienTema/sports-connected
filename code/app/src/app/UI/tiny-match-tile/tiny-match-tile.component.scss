@@ -1,0 +1,38 @@
+.tiny-match-tile {
+  // background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .tiny-match-tile_league {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .tiny-match-tile_date {
+    font-size: 12px;
+  }
+
+  .tiny-match-tile_teams {
+
+    display: flex;
+    justify-content: center;
+
+    .tiny-match-tile_team_container {
+      max-width: 25px;
+      height: 30px;
+
+      .tiny-match-tile_team {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+      }
+    }
+
+    .tiny-match-tile_score {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    
+  }
+}

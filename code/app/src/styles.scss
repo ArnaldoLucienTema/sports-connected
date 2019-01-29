@@ -1,8 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/vis/dist/vis.min.css';
 @import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import '../node_modules/bootstrap-grid-only/bootstrap.css';
+// @import "~bootstrap/dist/css/bootstrap.css";
+/* @import '../node_modules/bootstrap-grid-only/bootstrap.css'; */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1280px
+);
+
+$container-max-widths: (
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1220px
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 
 [hidden], template {
   display: none !important;
@@ -318,9 +338,10 @@ body {
   width: fit-content;
 }
 
-.achievements {
-  margin: 10px;
-}
+// TODO: check if is being used anywhere else
+// .achievements {
+//   margin: 10px;
+// }
 
 .indicators {
   margin: 20px;
@@ -342,8 +363,9 @@ body {
   max-height: 200px;
   padding: 10px 20px;
   display: inline-block;
+  border-radius: 10px;
   width: 100%;
-  background-color: transparent;
+  background-color: white;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
@@ -421,6 +443,7 @@ body {
   margin-left: auto;
 }
 
+/* MAYBE OUTSOURCE THIS CODE being used in user-info-profile */
 .profile-buttons {
   margin: 10px auto;
   width: fit-content;
@@ -694,28 +717,29 @@ body {
   padding: 10px;
 }
 
+/* TODO: Outsource table to specific style sheet */
+/* TODO: Validate margin */
+
 .personal-table {
-  margin: 20px 0;
-  background-color: #798b9757;
+  // margin: 20px 0;
+  border-radius: 10px;
+  background-color: #ffffff;
   float: none !important;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
-.personal-table tr {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-}
-
 .personal-table td {
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 12px !important;
   color: black !important;
   font-weight: 300 !important;
   text-align: left !important;
   border: none !important;
-  padding: 5px !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding: 6px !important;
+}
+
+.personal-table td:first-child{
+  font-weight: 400 !important;
 }
 
 .personal-table .first-td-padding{
@@ -761,7 +785,7 @@ table .caption img {
 }
 
 .mat-fab.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
-  background-color: #4383a882;
+  background-color: #ffffff;
 }
 
 .documentation footer {
@@ -1081,10 +1105,10 @@ coisas transversais a toda a plataforma.
   object-fit: contain;
 }
 
-.row {
+/* .row {
   margin: 0 auto !important;
   width: 1200px;
-}
+} */
 
 .mat-dialog-container{
   padding: 0px !important; /* Override default padding */
@@ -1114,26 +1138,27 @@ coisas transversais a toda a plataforma.
 }
 
 
+// TODO: Validate if this is used in other screens other than user-info
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 150px;
-  width: 19%;
-  max-width: 240px;
-}
+// .sticky {
+//   position: fixed;
+//   top: 150px;
+//   width: 19%;
+//   max-width: 240px;
+// }
 
-.sticky-achievements {
-  position: fixed;
-  width: 28%;
-  max-width: 354.19px;
-  top: 240px;
-}
+// .sticky-achievements {
+//   position: fixed;
+//   width: 28%;
+//   max-width: 354.19px;
+//   top: 240px;
+// }
 
-.sticky-stats {
-  width: 28%;
-  max-width: 354.19px;
-  position: fixed;
-}
+// .sticky-stats {
+//   width: 28%;
+//   max-width: 354.19px;
+//   position: fixed;
+// }
 
 .hidden-for-footer {
   display: none;
@@ -1338,7 +1363,7 @@ button.toast-close-button {
   pointer-events: auto;
 }
 .toast-success {
-  background-color: #4383a882;
+  background-color: #ffffff;
 }
 .toast-error {
   background-color: #BD362F;
