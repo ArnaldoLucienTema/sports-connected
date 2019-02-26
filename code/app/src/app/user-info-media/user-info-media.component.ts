@@ -1,22 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import {UserInfoViewModel} from '../_models/user_info_viewmodel';
 import {UserInfoService} from '../_services/user_info.service';
 import { Chart } from 'chart.js';
 import {Sort} from '@angular/material';
 import {ActivatedRoute} from "@angular/router";
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { MediaModalComponent } from '../UI/media-modal/media-modal.component';
+import { Media } from '../_models/media';
 
 
 @Component({
   selector: 'app-user-info-media',
   templateUrl: './user-info-media.component.html',
-  styleUrls: ['./user-info-media.component.css']
+  styleUrls: ['./user-info-media.component.scss']
 })
 export class User_infoMediaComponent implements OnInit{
 
   viewModel: UserInfoViewModel;
   sortedData;
   id;
-  constructor(private userInfoService : UserInfoService, private route: ActivatedRoute) {}
+  modalRef: BsModalRef;
+
+  constructor(private userInfoService : UserInfoService,
+              private route: ActivatedRoute,
+              private modalService: BsModalService) {}
 
   ngOnInit() {
 
@@ -324,6 +331,14 @@ export class User_infoMediaComponent implements OnInit{
         default: return 0;
       }
     });
+  }
+  
+  openModal() {
+    this.modalRef = this.modalService.show(MediaModalComponent);
+  }
+
+  openModalWithMedia(media: Media) {
+    this.modalRef = this.modalService.show(MediaModalComponent, {initialState: media});
   }
 
 }

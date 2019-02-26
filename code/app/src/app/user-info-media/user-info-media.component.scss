@@ -338,3 +338,33 @@ img {
   right: 0;
   margin: 10px auto;
 }
+
+.top-bar {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100px;
+
+  button {
+    background-color: #032f4f; 
+    color: #ffffff;
+  }
+
+  .sort-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    right: 0;
+
+    div {
+      padding: 5px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}
