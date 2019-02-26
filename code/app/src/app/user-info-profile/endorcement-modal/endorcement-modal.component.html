@@ -1,0 +1,51 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">Modal</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body p-3">
+  <h3>Recomendações</h3>
+  <div style="overflow: auto; max-height: 300px">
+    <div class="p-2" *ngFor="let item of [{text: test},{text: test},{text: test},{text: test}]; let i = index">
+      <div style="display: flex; align-items: center;">
+        <a  class="avatar">
+          <img src="https://www.zerozero.pt/img/jogadores/88/220488_20180801225502_bruno_fernandes.png" class="sc-profile-small-image">
+        </a>
+        <h5>Marco Monsanto</h5>
+      </div>
+      <!-- <a *ngIf="viewModel.avatar" href="/user-info/{{viewModel.profile_id}}" class="avatar">
+        <img [src]="viewModel.avatar" class="sc-profile-small-image">
+      </a> -->
+      <hr *ngIf="i + 1 < [{text: test},{text: test},{text: test},{text: test}].length">
+    </div>
+  </div>
+  <!-- <textarea #titleTextarea [(ngModel)]="title" class="title" placeholder="Escreva o titulo..."></textarea>
+  <textarea #descriptionTextarea [(ngModel)]="text" class="description" placeholder="Escreva a descrição..."></textarea>
+  <section class="options-container">
+    <button mat-button class="option mx-2">
+      <mat-icon>add_a_photo</mat-icon>
+      Photo
+    </button>
+    <button mat-button class="option mx-2">
+      <mat-icon>add_photo_alternate</mat-icon>
+      Image
+    </button>
+    <button mat-button class="option mx-2">
+      <mat-icon>video_call</mat-icon>
+      Video
+    </button>
+  </section>
+  <section class="p-2 attachments" style="display: flex; align-items: center; justify-content: space-between">
+    <div style="display: flex; align-content: center;">
+      <i class="material-icons file"> add_photo_alternate </i>
+      <span>Teste.png</span>
+    </div>
+    <button type="button" class="btn btn-light btn-sm" style="font-size: 1.5rem">&times;</button>
+  </section> -->
+</div>
+<!-- <div class="modal-footer">
+  <button mat-button class="confirm">
+    Adicionar
+  </button>
+</div> -->

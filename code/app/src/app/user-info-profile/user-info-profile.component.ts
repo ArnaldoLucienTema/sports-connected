@@ -21,6 +21,10 @@ import { of } from 'rxjs/observable/of';
 import { AuthenticationService } from '../_services/authentication.service';
 import { SessionUser } from '../_models/session_user';
 
+import _ from 'lodash';
+import { EndorcementModalComponent } from './endorcement-modal/endorcement-modal.component';
+import { BsModalService } from 'ngx-bootstrap/modal';
+
 @Component({
   selector: 'app-user-info-profile',
   templateUrl: './user-info-profile.component.html',
@@ -66,6 +70,8 @@ export class UserInfoProfileComponent implements OnInit, AfterViewInit {
   isFollowing: boolean = false;
   isSessionUserProfile: boolean = false;
 
+  modalRef;
+
   nextGameList = [];
 
   constructor(
@@ -76,7 +82,8 @@ export class UserInfoProfileComponent implements OnInit, AfterViewInit {
     public toastr: ToastsManager,
     vcr: ViewContainerRef,
     private cdRef: ChangeDetectorRef,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private modalService: BsModalService
   ) {
     this.toastr.setRootViewContainerRef(vcr);
   }
@@ -469,24 +476,27 @@ export class UserInfoProfileComponent implements OnInit, AfterViewInit {
 
   loadChart() {
     this.loading_chart = true;
+    console.log('skillset', this.viewModel.skill_set);
+    this.viewModel.skill_set = _.orderBy(this.viewModel.skill_set, ['endorsements.length'], ['desc']);
+    console.log('skillset', this.viewModel.skill_set);
     this.viewModel.skill_set.forEach(skill => {
       this.labels.push(skill.name);
       this.labels_values.push(skill.endorsements.length);
     });
+    console.log(this.labels);
+    this.labels = this.labels.splice(0, 4);
+    this.labels_values = this.labels_values.splice(0, 4);
     this.data = {
       labels: this.labels,
+      fontColor: '#fff',
+      fillColor: '#ffffff',
       datasets: [
         {
           data: this.labels_values, //[19, 18, 14, 15, 23]
-          backgroundColor: [
-            '#4383a882',
-            '#4383a882',
-            '#4383a882',
-            '#4383a882',
-            '#4383a882'
-          ]
+          backgroundColor: '#032f4f',
+          fontColor: '#ffffff'
         }
-      ]
+      ],
     };
     this.options = {
       title: {
@@ -501,6 +511,10 @@ export class UserInfoProfileComponent implements OnInit, AfterViewInit {
       scales: {
         xAxes: [
           {
+            ticks: {
+              beginAtZero: true,
+              stepSize: 1
+            },
             gridLines: {
               display: false
             }
@@ -508,15 +522,27 @@ export class UserInfoProfileComponent implements OnInit, AfterViewInit {
         ],
         yAxes: [
           {
+            scaleLabel: {
+              display: true
+            },
             ticks: {
               mirror: true
             },
             gridLines: {
-              display: false
+              display: true
             }
           }
         ]
-      }
+      },
+      hover: {
+        onHover: function(e) {
+          var point = this.getElementAtEvent(e);
+          if (point.length) e.target.style.cursor = 'pointer';
+          else e.target.style.cursor = 'default';
+        }
+      },
+      // events: ['click'],
+      onClick: this.handleBarClick.bind(this)
     };
 
     //TODO: Chart skillz
@@ -529,6 +555,16 @@ export class UserInfoProfileComponent implements OnInit, AfterViewInit {
     });
     this.loading_chart = false;
     return true;
+  }
+
+  handleBarClick(event) {
+
+    const elm = this._chart.getElementAtEvent(event)[0];
+    if (elm) {
+      this.modalRef = this.modalService.show(EndorcementModalComponent);
+    }
+    console.log('index', this.labels[elm._index])
+    console.log('event', event, elm);
   }
 
   addRecommendation(): void {

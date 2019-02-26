@@ -1,0 +1,27 @@
+modal-container {
+  .modal-content {
+      border-radius: 0;
+
+      .modal-header {
+        background-color: #032f4f;
+        border-radius: 0;
+
+        .modal-title {
+          font-size: bold;
+          color: #ffffff;
+        }
+
+        .close {
+          opacity: 1;
+          color: #ffffff;
+        }
+      }
+
+      .modal-footer {
+        .confirm {
+          background-color: #032f4f; 
+          color: #ffffff;
+        }
+      }
+  } 
+}

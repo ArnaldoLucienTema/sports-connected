@@ -1,107 +1,82 @@
-<div *ngIf="viewModel" class="inner-page player">
+<div *ngIf="viewModel" class="inner-page player container">
 
-  <table class="table-order-center" matSort (matSortChange)="sortData($event)">
-    <tr>
-      <th mat-sort-header="Recente">Recente</th>
-      <th mat-sort-header="Popular">Popular</th>
-      <th mat-sort-header="Gostos">Gostos</th>
-    </tr>
-  </table>
+  <div class="row top-bar">
+        <!-- <button mat-fab class="button-image" (click)="voteSkill($event)" title="Goleador">
+            <mat-icon aria-label="add new media">add_circle_outline</mat-icon>
+          </button> -->
 
-  <div class="col-md-6 col-xs-12 column " *ngFor="let med of sortedData">
-    <div class="callout small articles-big">
-      <div class="video">
-        <iframe width="100%" height="360" src="//www.youtube.com/embed/8Z0sbekoQL4" frameborder="0"
-                allowfullscreen=""></iframe>
-      </div>
-      <div class="description">
-        <p class="title">
-          <br>
-          <a href="/video/11523/" title="{{med.title}}">{{med.title}}</a>
-          <br>
-          {{med.text}}
-        </p>
-        <div class="authors">
-          <span class="author">{{med.author}}</span></div>
-        <div class="date">{{med.date}}</div>
+        <!-- <i class="material-icons">add</i> -->
+        <button mat-button (click)="openModal()">
+            <mat-icon>add</mat-icon>
+            Adicionar
+        </button>
+        <section class="sort-container" matSort (matSortChange)="sortData($event)">
+          <div mat-sort-header="Recente">Recente</div>
+          <div mat-sort-header="Popular">Popular</div>
+          <div mat-sort-header="Gostos">Gostos</div>
+        </section>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-xs-12" *ngFor="let med of sortedData">
+      <div class="callout small articles-big">
+        <div class="video">
+          <iframe width="100%" height="360" src="//www.youtube.com/embed/8Z0sbekoQL4" frameborder="0"
+                  allowfullscreen=""></iframe>
+        </div>
+        <div class="description">
+          <p class="title">
+            <br>
+            <a href="/video/11523/" title="{{med.title}}">{{med.title}}</a>
+            <br>
+            {{med.text}}
+          </p>
+          <div class="authors">
+            <span class="author">{{med.author}}</span>
+          </div>
+          <div class="date">{{med.date}}</div>
+          <div class="float-right" style="bottom: 20px; position: absolute; right: 20px;">
+            <mat-menu #appMenu="matMenu">
+              <button mat-menu-item (click)="openModalWithMedia(med)">Editar</button>
+              <button mat-menu-item>Eliminar</button>
+            </mat-menu>
+            <button mat-icon-button [matMenuTriggerFor]="appMenu">
+              <mat-icon aria-label="settings">more_vert</mat-icon>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div [hidden]="viewModel" class="loading">
-  <img src="/assets/SP_Logo_Black.png" style="height: 100px; width: auto;">
-  <div class="bars">
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
-    <div class="loading-bar"></div>
+<ui-loading [visible]="!viewModel"></ui-loading>
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
-  <!--<div style="color: darkgrey; font-family: Museo Sans,sans-serif; font-size: 20px; margin: 20px auto;">
-    Um jogo, um clique, o teu destino.
-  </div>-->
-  <style>
-    .loading {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      position: absolute;
-      max-width: 100%;
-      max-height: 100%;
-      overflow: auto;
-      text-align: center;
-      background-color: white;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .loading .bars {
-      margin: 20px auto;
-      width: 100%;
-    }
-
-    .loading-bar {
-      display: inline-block;
-      width: 4px;
-      height: 18px;
-      border-radius: 4px;
-      animation: loading 1s ease-in-out infinite;
-    }
-
-    .loading-bar:nth-child(1) {
-      background-color: #27ae60;
-      animation-delay: 0;
-    }
-
-    .loading-bar:nth-child(2) {
-      background-color: #f1c40f;
-      animation-delay: 0.09s;
-    }
-
-    .loading-bar:nth-child(3) {
-      background-color: #c0392b;
-      animation-delay: .18s;
-    }
-
-    .loading-bar:nth-child(4) {
-      background-color: #c0392b;
-      animation-delay: .27s;
-    }
-
-    @keyframes loading {
-      0% {
-        transform: scale(1);
-      }
-      20% {
-        transform: scale(1, 2.2);
-      }
-      40% {
-        transform: scale(1);
-      }
-    }
-  </style>
-</div>
+  <div class="modal-body" style="padding:0">
+    <textarea style="width: 100%; height: 200px; padding:10px; border: none; resize: none" placeholder="Type your message here..."></textarea>
+    <section style="width: 90%; margin-left: auto; margin-right: auto; display: flex; justify-content: space-evenly; padding: 2px; margin-bottom: 1rem; border: 1px solid lightgray;">
+      <button mat-stroked-button style="flex: 1" class="mx-2">
+        <mat-icon>add_a_photo</mat-icon>
+        Photo
+      </button>
+      <button mat-stroked-button style="flex: 1" class="mx-2">
+        <mat-icon>add_photo_alternate</mat-icon>
+        Image
+      </button>
+      <button mat-stroked-button style="flex: 1" class="mx-2">
+        <mat-icon>video_call</mat-icon>
+        Video
+      </button>
+    </section>
+  </div>
+  <div class="modal-footer">
+    <button mat-button class="confirm">
+      Adicionar
+    </button>
+  </div>
+</ng-template>

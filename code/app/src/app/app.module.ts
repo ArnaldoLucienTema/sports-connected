@@ -57,6 +57,7 @@ import {
   MatTooltipModule,
   MatStepperModule
 } from '@angular/material';
+import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
@@ -99,6 +100,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { LoadingComponent } from './UI/loading/loading.component';
 import { MatchTileComponent } from './UI/match-tile/match-tile.component';
 import { TinyMatchTileComponent } from './UI/tiny-match-tile/tiny-match-tile.component';
+import { MediaModalComponent } from './UI/media-modal/media-modal.component';
+import { EndorcementModalComponent } from './user-info-profile/endorcement-modal/endorcement-modal.component';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   // Change this to your upload POST address:
@@ -136,9 +139,12 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     NotificationsComponent,
     LoadingComponent,
     MatchTileComponent,
-    TinyMatchTileComponent
+    TinyMatchTileComponent,
+    MediaModalComponent,
+    EndorcementModalComponent
   ],
   imports: [
+    ModalModule.forRoot(),
     ImageCropperModule,
     HttpClientModule,
     BrowserModule,
@@ -203,14 +209,17 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     {
       provide: DROPZONE_CONFIG,
       useValue: DEFAULT_DROPZONE_CONFIG
-    }
+    },
+    BsModalService
   ],
   bootstrap: [AppComponent],
   entryComponents: [
     RecommendationModalComponent,
     UploadImageModalComponent,
     TeamPlayerEvaluationModalComponent,
-    TryoutModalComponent
+    TryoutModalComponent,
+    MediaModalComponent,
+    EndorcementModalComponent
   ]
 })
 export class AppModule {}
