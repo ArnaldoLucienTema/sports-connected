@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9dca14c7-b390-47fd-997e-e520be589481" name="Default" comment="Age and DOB for listed users;&#10;Report files added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,208 +15,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user_info_controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/user_info_controller.js">
+      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+            <state>
               <folding>
-                <element signature="e#489#607#0" />
-                <element signature="e#1041#1334#0" />
-                <element signature="e#1064#1238#0" />
-                <element signature="e#1110#1222#0" />
-                <element signature="e#1580#1754#0" />
-                <element signature="e#1626#1738#0" />
-                <element signature="e#2207#2319#0" />
-                <element signature="e#2364#2494#0" />
-                <element signature="e#2410#2478#0" />
-                <element signature="e#2633#3027#0" />
-                <element signature="e#2676#2747#0" />
-                <element signature="e#2796#3023#0" />
-                <element signature="e#2815#2969#0" />
-                <element signature="e#2857#2957#0" />
-                <element signature="e#3067#4168#0" />
-                <element signature="e#3402#4164#0" />
-                <element signature="e#3421#3575#0" />
-                <element signature="e#3463#3563#0" />
-                <element signature="e#3595#4042#0" />
-                <element signature="e#3703#4030#0" />
-                <element signature="e#3730#3920#0" />
-                <element signature="e#3780#3900#0" />
-                <element signature="e#4055#4158#0" />
-                <element signature="e#4208#4534#0" />
-                <element signature="e#4307#4530#0" />
-                <element signature="e#4326#4485#0" />
-                <element signature="e#4368#4473#0" />
-                <element signature="e#4732#4842#0" />
-                <element signature="e#4770#4834#0" />
-                <element signature="e#5100#5259#0" />
-                <element signature="e#5142#5247#0" />
-                <element signature="e#5432#5544#0" />
-                <element signature="e#5589#5719#0" />
-                <element signature="e#5635#5703#0" />
-                <element signature="e#5890#6014#0" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="football_user_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/football_user_info.js">
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="-306" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-194">
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding>
-                <element signature="e#659#806#0" />
-                <element signature="e#829#1481#0" />
-                <element signature="e#1501#1657#0" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="football_user_info_season.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/football_user_info_season.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/auth/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="99" column="79" selection-start-line="99" selection-start-column="79" selection-end-line="99" selection-end-column="79" />
-              <folding>
-                <element signature="e#276#857#0" />
-                <element signature="e#316#542#0" />
-                <element signature="e#869#1088#0" />
-                <element signature="e#1101#1801#0" />
-                <element signature="e#1102#1800#0" />
-                <element signature="e#1932#2167#0" />
-                <element signature="e#2188#2429#0" />
-                <element signature="e#2450#2691#0" />
-                <element signature="e#2711#3438#0" />
-                <element signature="e#2721#3432#0" />
-                <element signature="e#2927#3422#0" />
-                <element signature="e#2954#3092#0" />
-                <element signature="e#2955#3091#0" />
-                <element signature="e#3116#3247#0" />
-                <element signature="e#3117#3246#0" />
-                <element signature="e#3271#3407#0" />
-                <element signature="e#3272#3406#0" />
-                <element signature="e#3458#3528#0" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="football_user_info_season_service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/services/football_user_info_season_service.js">
+      <file leaf-file-name="authentication.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/_services/authentication.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="106" column="38" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="38" />
+            <state relative-caret-position="367">
+              <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-user-info.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/edit-user-info/edit-user-info.component.ts">
+      <file leaf-file-name="user-info-media.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/user-info-media/user-info-media.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
-              <folding>
-                <element signature="e#1095#1230#0" />
-                <element signature="n#!!block;n#constructor#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#ngOnInit#0;n#EditUserInfoComponent#0" />
-                <element signature="e#2553#2589#0" />
-                <element signature="e#2607#2643#0" />
-                <element signature="e#2671#2776#0" />
-                <element signature="e#2863#2988#0" />
-                <element signature="e#3075#3488#0" />
-                <element signature="e#3083#3133#0" />
-                <element signature="e#3141#3191#0" />
-                <element signature="e#3199#3249#0" />
-                <element signature="e#3257#3307#0" />
-                <element signature="e#3315#3365#0" />
-                <element signature="e#3373#3423#0" />
-                <element signature="e#3431#3481#0" />
-                <element signature="e#3509#3552#0" />
-                <element signature="e#3575#3872#0" />
-                <element signature="e#3895#4042#0" />
-                <element signature="e#4060#4116#0" />
-                <element signature="e#4136#4252#0" />
-                <element signature="e#4285#4576#0" />
-                <element signature="e#4301#4370#0" />
-                <element signature="e#4388#4458#0" />
-                <element signature="e#4478#4570#0" />
-                <element signature="e#4617#5759#0" />
-                <element signature="e#4637#5053#0" />
-                <element signature="e#5070#5195#0" />
-                <element signature="e#5223#5358#0" />
-                <element signature="e#5378#5652#0" />
-                <element signature="e#5669#5753#0" />
-                <element signature="n#!!block;n#createForms#0;n#EditUserInfoComponent#0" />
-                <element signature="e#6260#6972#0" />
-                <element signature="e#7055#7630#0" />
-                <element signature="e#7112#7328#0" />
-                <element signature="e#7384#7500#0" />
-                <element signature="e#7687#7796#0" />
-                <element signature="e#8017#8343#0" />
-                <element signature="e#8351#8537#0" />
-                <element signature="n#!!block;n#save#0;n#EditUserInfoComponent#0" />
-                <element signature="e#8742#8943#0" />
-                <element signature="n#!!block;n#discard#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#goToMatch#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#changedInput#0;n#EditUserInfoComponent#0" />
-                <element signature="e#9342#9490#0" />
-                <element signature="n#!!block;n#goToTop#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#fileChangeEvent#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#imageCroppedBase64#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#imageCroppedFile#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#imageLoaded#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#imageLoadFailed#0;n#EditUserInfoComponent#0" />
-                <element signature="n#!!block;n#random#0" />
-                <element signature="n#!!block;n#_make_random_text#0" />
-              </folding>
+            <state relative-caret-position="-5508">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player_routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/player_routes.js">
+      <file leaf-file-name="loadLoader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/node_modules/loader-runner/lib/loadLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="139">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app.js">
+      <file leaf-file-name="home.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/home/home.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="202">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crawler.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/crawlers/zerozero/crawler.js">
+      <file leaf-file-name="football_user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/football_user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="87" column="51" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="football_user_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/crawlers/zerozero/functions/football_user_info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="991">
-              <caret line="185" column="12" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="football_match.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/crawlers/zerozero/functions/football_match.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="347" column="36" selection-start-line="347" selection-start-column="36" selection-end-line="347" selection-end-column="36" />
+            <state relative-caret-position="290">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -308,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Website/routes/storage_routes.js" />
         <option value="$PROJECT_DIR$/Website/middleware/formidable-express" />
         <option value="$PROJECT_DIR$/Website/controllers/storage_controller.js" />
         <option value="$PROJECT_DIR$/Angular/APP BoilerPlate/src/app/_services/authentication.service.ts" />
@@ -359,6 +247,7 @@
         <option value="$PROJECT_DIR$/Angular/APP BoilerPlate/src/app/user-info-profile/user-info-profile.component.ts" />
         <option value="$PROJECT_DIR$/server/models/football_user_info_season.js" />
         <option value="$PROJECT_DIR$/app/src/app/edit-user-info/edit-user-info.component.ts" />
+        <option value="$PROJECT_DIR$/app/src/app/_services/authentication.service.ts" />
       </list>
     </option>
   </component>
@@ -387,7 +276,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -398,13 +287,33 @@
               <item name="code" type="b2602c69:ProjectViewProjectNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code" type="cbb8eebc:String" user="code" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code" type="cbb8eebc:String" user="code" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,15 +333,15 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Website/services/storage" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Website/controllers" />
       <recent name="$PROJECT_DIR$/Website/routes" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Angular/APP BoilerPlate/src/assets/js" />
       <recent name="$PROJECT_DIR$/Website/services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Website/services/storage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -550,10 +459,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558872000" />
+    <option name="totallyTimeSpent" value="561394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="995" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="845" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -564,27 +473,51 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="NativeScript" order="8" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.38125" weight="0.26588845" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.38125" weight="0.4773022" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4984375" weight="0.32858595" />
-      <window_info anchor="bottom" x="1287" y="10" width="1920" height="376" id="Terminal" order="13" sideWeight="0.4340278" side_tool="true" visible="true" weight="0.3344191" />
+      <window_info active="true" anchor="bottom" x="1287" y="10" width="1920" height="376" id="Terminal" order="13" sideWeight="0.4340278" visible="true" weight="0.4241245" />
       <window_info id="Capture Tool" order="3" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32935917" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829933" visible="true" weight="0.22142857" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49829933" visible="true" weight="0.20555556" />
       <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.37708333" weight="0.44228274" />
       <window_info id="Structure" order="1" sideWeight="0.5017007" side_tool="true" weight="0.19739583" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.5659722" weight="0.46562904" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.5659722" weight="0.51880676" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32935917" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.37708333" weight="0.44228274" />
       <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829933" visible="true" weight="0.22142857" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.5017007" side_tool="true" weight="0.19739583" />
+      <window_info anchor="bottom" x="1287" y="10" width="1920" height="376" id="Terminal" order="13" sideWeight="0.4340278" side_tool="true" visible="true" weight="0.3344191" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.5659722" weight="0.46562904" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4984375" weight="0.32858595" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.37708333" weight="0.44228274" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="NativeScript" order="8" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32935917" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.38125" weight="0.26588845" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32935917" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,23 +633,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/crawlers/zerozero/crawler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="51" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/APP BoilerPlate/src/app/_models/user_info_season.ts" />
-    <entry file="file://$PROJECT_DIR$/Angular/APP BoilerPlate/src/styles.css" />
-    <entry file="file://$PROJECT_DIR$/Angular/APP BoilerPlate/src/app/header/header.component.html" />
     <entry file="file://$PROJECT_DIR$/server/node_modules/mongoose/lib/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -867,43 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding>
-            <element signature="e#489#607#0" />
-            <element signature="e#1041#1334#0" />
-            <element signature="e#1064#1238#0" />
-            <element signature="e#1110#1222#0" />
-            <element signature="e#1580#1754#0" />
-            <element signature="e#1626#1738#0" />
-            <element signature="e#2207#2319#0" />
-            <element signature="e#2364#2494#0" />
-            <element signature="e#2410#2478#0" />
-            <element signature="e#2633#3027#0" />
-            <element signature="e#2676#2747#0" />
-            <element signature="e#2796#3023#0" />
-            <element signature="e#2815#2969#0" />
-            <element signature="e#2857#2957#0" />
-            <element signature="e#3067#4168#0" />
-            <element signature="e#3402#4164#0" />
-            <element signature="e#3421#3575#0" />
-            <element signature="e#3463#3563#0" />
-            <element signature="e#3595#4042#0" />
-            <element signature="e#3703#4030#0" />
-            <element signature="e#3730#3920#0" />
-            <element signature="e#3780#3900#0" />
-            <element signature="e#4055#4158#0" />
-            <element signature="e#4208#4534#0" />
-            <element signature="e#4307#4530#0" />
-            <element signature="e#4326#4485#0" />
-            <element signature="e#4368#4473#0" />
-            <element signature="e#4732#4842#0" />
-            <element signature="e#4770#4834#0" />
-            <element signature="e#5100#5259#0" />
-            <element signature="e#5142#5247#0" />
-            <element signature="e#5432#5544#0" />
-            <element signature="e#5589#5719#0" />
-            <element signature="e#5635#5703#0" />
-            <element signature="e#5890#6014#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,11 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#659#806#0" />
-            <element signature="e#829#1481#0" />
-            <element signature="e#1501#1657#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,60 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
-          <folding>
-            <element signature="e#1095#1230#0" />
-            <element signature="n#!!block;n#constructor#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#ngOnInit#0;n#EditUserInfoComponent#0" />
-            <element signature="e#2553#2589#0" />
-            <element signature="e#2607#2643#0" />
-            <element signature="e#2671#2776#0" />
-            <element signature="e#2863#2988#0" />
-            <element signature="e#3075#3488#0" />
-            <element signature="e#3083#3133#0" />
-            <element signature="e#3141#3191#0" />
-            <element signature="e#3199#3249#0" />
-            <element signature="e#3257#3307#0" />
-            <element signature="e#3315#3365#0" />
-            <element signature="e#3373#3423#0" />
-            <element signature="e#3431#3481#0" />
-            <element signature="e#3509#3552#0" />
-            <element signature="e#3575#3872#0" />
-            <element signature="e#3895#4042#0" />
-            <element signature="e#4060#4116#0" />
-            <element signature="e#4136#4252#0" />
-            <element signature="e#4285#4576#0" />
-            <element signature="e#4301#4370#0" />
-            <element signature="e#4388#4458#0" />
-            <element signature="e#4478#4570#0" />
-            <element signature="e#4617#5759#0" />
-            <element signature="e#4637#5053#0" />
-            <element signature="e#5070#5195#0" />
-            <element signature="e#5223#5358#0" />
-            <element signature="e#5378#5652#0" />
-            <element signature="e#5669#5753#0" />
-            <element signature="n#!!block;n#createForms#0;n#EditUserInfoComponent#0" />
-            <element signature="e#6260#6972#0" />
-            <element signature="e#7055#7630#0" />
-            <element signature="e#7112#7328#0" />
-            <element signature="e#7384#7500#0" />
-            <element signature="e#7687#7796#0" />
-            <element signature="e#8017#8343#0" />
-            <element signature="e#8351#8537#0" />
-            <element signature="n#!!block;n#save#0;n#EditUserInfoComponent#0" />
-            <element signature="e#8742#8943#0" />
-            <element signature="n#!!block;n#discard#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#goToMatch#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#changedInput#0;n#EditUserInfoComponent#0" />
-            <element signature="e#9342#9490#0" />
-            <element signature="n#!!block;n#goToTop#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#fileChangeEvent#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#imageCroppedBase64#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#imageCroppedFile#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#imageLoaded#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#imageLoadFailed#0;n#EditUserInfoComponent#0" />
-            <element signature="n#!!block;n#random#0" />
-            <element signature="n#!!block;n#_make_random_text#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,26 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="99" column="79" selection-start-line="99" selection-start-column="79" selection-end-line="99" selection-end-column="79" />
-          <folding>
-            <element signature="e#276#857#0" />
-            <element signature="e#316#542#0" />
-            <element signature="e#869#1088#0" />
-            <element signature="e#1101#1801#0" />
-            <element signature="e#1102#1800#0" />
-            <element signature="e#1932#2167#0" />
-            <element signature="e#2188#2429#0" />
-            <element signature="e#2450#2691#0" />
-            <element signature="e#2711#3438#0" />
-            <element signature="e#2721#3432#0" />
-            <element signature="e#2927#3422#0" />
-            <element signature="e#2954#3092#0" />
-            <element signature="e#2955#3091#0" />
-            <element signature="e#3116#3247#0" />
-            <element signature="e#3117#3246#0" />
-            <element signature="e#3271#3407#0" />
-            <element signature="e#3272#3406#0" />
-            <element signature="e#3458#3528#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,6 +832,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="347" column="36" selection-start-line="347" selection-start-column="36" selection-end-line="347" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/_services/authentication.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/user-info-media/user-info-media.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5508">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/node_modules/@angular/common/http/src/client.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="1721" column="4" selection-start-line="1721" selection-start-column="4" selection-end-line="1721" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/node_modules/loader-runner/lib/loadLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
